@@ -484,7 +484,7 @@ function launchEmojis(emojis, count) {
     resetTimer = setTimeout(() => { clicks = 0; }, 2000);
     if (clicks >= 7) {
       clicks = 0;
-      showToast('🐄 DAIRY MODE ACTIVATED — Got milk? 🥛', 5000);
+      showToast('🐄 DAIRY MODE ACTIVATED — You found Easter Egg #2! Got milk? 🥛', 5000);
       launchEmojis(['🐄','🥛','🧀','🧈','🐮','🫙'], 55);
     }
   });
@@ -515,14 +515,18 @@ function launchEmojis(emojis, count) {
   if (!stat) return;
   let clicks = 0;
 
-  stat.style.cursor = 'pointer';
-  stat.addEventListener('click', () => {
+  function trigger() {
     clicks++;
     if (clicks === 5) {
       clicks = 0;
       showToast('🔓 100% vibes · 100% open source · 100% dairy-free… or is it? 🐄', 5000);
       launchEmojis(['🔓','⭐','🐄','✨'], 25);
     }
+  }
+
+  stat.addEventListener('click', trigger);
+  stat.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger(); }
   });
 })();
 

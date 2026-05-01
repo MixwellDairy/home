@@ -433,6 +433,10 @@ nav.scrolled {
   cursor: default;
 }
 
+#secret-stat {
+  cursor: pointer;
+}
+
 .stat.visible {
   opacity: 1;
   transform: translateY(0);
