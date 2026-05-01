@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MixwellDairy · Projects</title>
+  <meta name="description" content="Personal homepage showcasing projects by MixwellDairy — productivity tools, utilities, and more." />
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background decoration -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="wrapper">
+
+    <!-- ════════════════════════════════ NAV ════════════════════════════════ -->
+    <nav>
+      <a class="nav-logo" href="#">MixwellDairy</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://github.com/MixwellDairy" target="_blank" rel="noopener">GitHub ↗</a></li>
+      </ul>
+    </nav>
+
+    <!-- ════════════════════════════════ HERO ═══════════════════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Open for collaboration
+        </div>
+
+        <h1>
+          Building tools<br />
+          <span class="gradient-text">that actually help.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Developer crafting productivity utilities, web tools, and
+          automation scripts — one project at a time.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">
+            View Projects
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-secondary" href="https://github.com/MixwellDairy" target="_blank" rel="noopener">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ STATS STRIP ════════════════════════════ -->
+    <div class="stats-strip" id="stats">
+      <div class="stat">
+        <div class="stat-number" data-target="6" data-suffix="">6</div>
+        <div class="stat-label">Public Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="5" data-suffix="">5</div>
+        <div class="stat-label">Languages Used</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="3" data-suffix="">3</div>
+        <div class="stat-label">Platforms Supported</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+        <div class="stat-label">Open Source</div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════ PROJECTS ════════════════════════════ -->
+    <section id="projects">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2>Featured Projects</h2>
+        <p>A collection of tools built to solve real problems — from productivity apps to network utilities.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- LockWeb -->
+        <a
+          class="project-card card-purple"
+          href="https://github.com/MixwellDairy/LockWeb"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="card-header">
+            <div class="card-icon icon-purple">🔒</div>
+            <div class="card-title-area">
+              <div class="card-title">LockWeb</div>
+              <div class="card-platform">Web · Productivity</div>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+
+          <p class="card-description">
+            A productivity tool designed to help users stay focused. Offers
+            web-based features that support distraction-free workflows and
+            enforce concentration measures for enhanced focus.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-js"><span class="tag-dot"></span>JavaScript</span>
+            <span class="tag tag-html"><span class="tag-dot"></span>HTML</span>
+            <span class="tag tag-shell"><span class="tag-dot"></span>Shell</span>
+          </div>
+        </a>
+
+        <!-- Uno-Reverse -->
+        <a
+          class="project-card card-blue"
+          href="https://github.com/MixwellDairy/Uno-Reverse"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="card-header">
+            <div class="card-icon icon-blue">🔄</div>
+            <div class="card-title-area">
+              <div class="card-title">Uno-Reverse</div>
+              <div class="card-platform">Web · Reverse Engineering</div>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+
+          <p class="card-description">
+            A reverse engineering tool for intercepting AI chat communications
+            with the Ollama platform. Enables users to analyze or modify chat
+            interactions for research, debugging, or integration purposes.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-js"><span class="tag-dot"></span>JavaScript</span>
+            <span class="tag tag-html"><span class="tag-dot"></span>HTML</span>
+          </div>
+        </a>
+
+        <!-- easywifi -->
+        <a
+          class="project-card card-cyan"
+          href="https://github.com/MixwellDairy/easywifi"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="card-header">
+            <div class="card-icon icon-cyan">📶</div>
+            <div class="card-title-area">
+              <div class="card-title">easywifi</div>
+              <div class="card-platform">Linux · Network Utility</div>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+
+          <p class="card-description">
+            A Linux-Ubuntu utility that lets users host a WiFi network over
+            the internet with an easy captive portal. Collects guest email and
+            name, presents custom Terms of Service, and streamlines WiFi
+            access management.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-python"><span class="tag-dot"></span>Python</span>
+            <span class="tag tag-html"><span class="tag-dot"></span>HTML</span>
+            <span class="tag tag-shell"><span class="tag-dot"></span>Shell</span>
+          </div>
+        </a>
+
+        <!-- ExportMsg -->
+        <a
+          class="project-card card-green"
+          href="https://github.com/MixwellDairy/ExportMsg"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="card-header">
+            <div class="card-icon icon-green">💬</div>
+            <div class="card-title-area">
+              <div class="card-title">ExportMsg</div>
+              <div class="card-platform">macOS · AI-powered</div>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+
+          <p class="card-description">
+            A Mac-exclusive app that exports iMessage chats as text files and
+            uses AI to generate conversation summaries. Helps Mac users
+            archive, analyze, and summarize message history efficiently.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-python"><span class="tag-dot"></span>Python</span>
+          </div>
+        </a>
+
+        <!-- digithall -->
+        <a
+          class="project-card card-orange"
+          href="https://github.com/MixwellDairy/digithall"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="card-header">
+            <div class="card-icon icon-orange">🏫</div>
+            <div class="card-title-area">
+              <div class="card-title">digithall</div>
+              <div class="card-platform">Web · Education</div>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+
+          <p class="card-description">
+            A digital hall pass system for schools that streamlines student
+            movement management. Provides a modern digital alternative to
+            traditional physical hall passes with a full-featured web
+            interface.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-ts"><span class="tag-dot"></span>TypeScript</span>
+            <span class="tag tag-js"><span class="tag-dot"></span>JavaScript</span>
+            <span class="tag tag-css"><span class="tag-dot"></span>CSS</span>
+            <span class="tag tag-shell"><span class="tag-dot"></span>Shell</span>
+          </div>
+        </a>
+
+        <!-- YtLoad -->
+        <a
+          class="project-card card-pink"
+          href="https://github.com/MixwellDairy/YtLoad"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="card-header">
+            <div class="card-icon icon-pink">▶️</div>
+            <div class="card-title-area">
+              <div class="card-title">YtLoad</div>
+              <div class="card-platform">macOS · Safari Extension</div>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+
+          <p class="card-description">
+            A dedicated YouTube video downloader tailored for Mac users,
+            integrated as a Safari service. Enables quick and seamless video
+            downloads directly from the browser without ever leaving Safari.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-shell"><span class="tag-dot"></span>Shell</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ABOUT ════════════════════════════════ -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-text section-header" style="text-align:left; margin-bottom:0;">
+          <span class="section-tag">About Me</span>
+          <h3>Building real tools<br />for real problems.</h3>
+          <p>
+            I'm a developer who loves building practical software — tools
+            that make daily workflows faster, smarter, or just more fun.
+            From network utilities to AI-powered apps, each project tackles
+            a concrete problem.
+          </p>
+          <p>
+            My work spans multiple platforms: the web, macOS, and Linux,
+            using whatever language or tool best fits the job.
+          </p>
+          <div class="skill-chips">
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">Shell</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">macOS</span>
+            <span class="chip">Linux</span>
+            <span class="chip">AI Integration</span>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-icon">🌐</div>
+            <div class="about-card-title">Web</div>
+            <div class="about-card-desc">Full-stack web tools & interfaces</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🍎</div>
+            <div class="about-card-title">macOS</div>
+            <div class="about-card-desc">Native Mac apps & Safari services</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🐧</div>
+            <div class="about-card-title">Linux</div>
+            <div class="about-card-desc">Ubuntu utilities & network tools</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🤖</div>
+            <div class="about-card-title">AI</div>
+            <div class="about-card-desc">AI-powered features & integrations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ FOOTER ══════════════════════════════ -->
+    <footer>
+      <span class="footer-logo">MixwellDairy</span>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://github.com/MixwellDairy" target="_blank" rel="noopener">GitHub ↗</a></li>
+      </ul>
+      <p class="footer-copy">Built with ❤️ · Open Source</p>
+    </footer>
+
+  </div><!-- /wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
